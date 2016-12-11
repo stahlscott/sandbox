@@ -4,7 +4,7 @@ application = Flask(__name__)
 
 @application.route("/")
 def hello():
-    return render_template('template.html',
+    return render_template('index.html',
                            my_string="Wheeeee!",
                            my_list=[0, 1, 2, 3, 4, 5])
 
