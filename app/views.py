@@ -4,6 +4,13 @@ from app import app, db
 from app.models import Post
 
 
+@app.route('/', methods=['GET'])
+def index():
+    return render_template('index.html',
+                           my_string="Wheeeee!",
+                           my_list=[0, 1, 2, 3, 4, 5])
+
+
 @app.route('/add', methods=['POST', 'GET'])
 def add():
     if request.method == 'POST':

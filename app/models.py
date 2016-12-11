@@ -6,6 +6,6 @@ class Post(db.Model):
     title = db.Column(db.String(128))
     body = db.Column(db.Text)
 
-    def __init__(self):
+    def __init__(self, title, body):
         self.title = title
         self.body = body
