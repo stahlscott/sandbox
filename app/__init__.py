@@ -1,10 +1,10 @@
 from flask import Flask
-from flask.ext.flask_sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
 app.config.from_object('config')
-app.secret_key = 'banana'
+app.secret_key = 'secret_key'
 
 db = SQLAlchemy(app)
 
