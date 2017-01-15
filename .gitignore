@@ -7,3 +7,6 @@
 *.iml
 out
 gen
+
+# config settings
+config.py
