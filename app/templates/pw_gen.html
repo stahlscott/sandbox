@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Flask Template Example{% endblock %}
+{% block title %}Password Generator{% endblock %}
 
 {% block head %}
   {{ super() }}
@@ -14,6 +14,7 @@
 
 {% block content %}
   <div class="container">
-
+    <h1>Your Password Is:</h1>
+    <h4>{{ passphrase }}</h4>
   </div>
 {% endblock %}
