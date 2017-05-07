@@ -3,23 +3,23 @@
 {% block title %}Boring Add Example{% endblock %}
 
 {% block head %}
-    {{ super() }}
-    <style type="text/css">
-        .container {
-            max-width: 500px;
-            padding-top: 100px;
-        }
-    </style>
+  {{ super() }}
+  <style type="text/css">
+    .container {
+      max-width: 500px;
+      padding-top: 100px;
+    }
+  </style>
 {% endblock %}
 
 {% block content %}
-    <div class="container">
-        <form action="" method="post">
-            Title
-            <input type="text" name="title"/>
-            Body
-            <textarea type="text" name="body"></textarea>
-            <button class="button postfix" type="submit">Add</button>
-        </form>
-    </div>
+  <div class="container">
+    <form action="" method="post">
+      Title
+      <input type="text" name="title"/>
+      Body
+      <textarea type="text" name="body"></textarea>
+      <button class="button postfix" type="submit">Add</button>
+    </form>
+  </div>
 {% endblock %}

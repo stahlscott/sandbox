@@ -2,6 +2,8 @@ from flask import render_template, request, flash
 
 from app import app, db
 from app.models import Post
+from app.pw_gen import PasswordGenerator
+from app.workout_calc import WorkoutCalculator
 
 
 @app.route('/')
@@ -20,3 +22,13 @@ def add():
         flash('New entry was successfully posted')
 
     return render_template('add.html')
+
+
+@app.route('/workout', methods=[GET])
+def workout_calc():
+    return render_template('workout.html')
+
+
+@app.route('/pw_gen', methods=[GET])
+def password_generator():
+    return render_template('pw_gen.html')
